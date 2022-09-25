@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace EF_FinalyTask.Entities
 {
-    internal class User
+    public class User
     {
+        public int Id { get; set; }
+        public string Name { get; set; } = null!;
+        public string Email { get; set; } = null!;
+        public List<Book> Books { get; set; } = new List<Book>();
     }
 }
